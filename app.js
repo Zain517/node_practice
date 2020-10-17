@@ -15,28 +15,68 @@
 //  Event Modules and class EventEmitter....
 ////Event Driven Programming 
 
-const EventEmitter = require('events');
-const eventEmitter = new EventEmitter();
-eventEmitter.on('Sum', (num1, num2)=>{
-    console.log('Calling Sum function....!!! ==> Added : ', num1+num2);
+// const EventEmitter = require('events');
+// const eventEmitter = new EventEmitter();
+// eventEmitter.on('Sum', (num1, num2)=>{
+//     console.log('Calling Sum function....!!! ==> Added : ', num1+num2);
+// });
+// eventEmitter.emit('Sum', 12, 32);
+
+// class Person extends EventEmitter{
+//     constructor(name){
+//         super();
+//         this._name = name;
+//     }
+//     get name(){
+//         return this._name;
+//     }
+// }
+
+// let P1 = new Person('pedro');
+// P1.on('first_name', ()=> { console.log('So the Username of P1 is ' + P1.name ) });
+
+// let P2 = new Person('cristina');
+// P2.on('first_name', ()=> { console.log('So the Username of P2 is ' + P2.name ) });
+
+// P1.emit('first_name');
+// P2.emit('first_name');
+
+
+
+//-----------------------------------------------------//
+// Part #03
+//  ReadLine Modules (Get Users Input)......
+
+const readline = require('readline');
+const rl = readline.createInterface({  input  : process.stdin,
+                            output : process.stdout });
+
+
+let num1 = Math.floor((Math.random()*10)+1);
+let num2 = Math.floor((Math.random()*10)+1);
+let answer = num1 + num2;
+
+rl.question(` The Sum of ${ num1 } and ${ num2 } ? \n` , 
+(userInput)=>{
+    // console.log(userInput);
+    if (userInput.trim() == answer){
+        rl.close();
+    }
+    else{
+        rl.setPrompt('Your Answer is Wrong...Try Again...!!! \n');
+        rl.prompt();
+        rl.on('line', (userInput)=>{
+            if (userInput.trim() == answer){
+                rl.close();
+            }
+            else{
+                rl.setPrompt(`Your Answer ${ userInput } is Wrong...Try Again...!!! \n`);
+                rl.prompt();
+            }
+        });
+    }
 });
-eventEmitter.emit('Sum', 12, 32);
 
-class Person extends EventEmitter{
-    constructor(name){
-        super();
-        this._name = name;
-    }
-    get name(){
-        return this._name;
-    }
-}
-
-let P1 = new Person('pedro');
-P1.on('first_name', ()=> { console.log('So the Username of P1 is ' + P1.name ) });
-
-let P2 = new Person('cristina');
-P2.on('first_name', ()=> { console.log('So the Username of P2 is ' + P2.name ) });
-
-P1.emit('first_name');
-P2.emit('first_name');
+rl.on('close', ()=>{
+    console.log('Congrates Bud....you got CORRECT answer...!!!');
+});

@@ -15,7 +15,3 @@
 
 // module.exports = {add:sum , PI:PI , SomeMathObjects:SomeMathObjects};
 
-
-//-----------------------------------------------------//
-// Part #02 
-//  Event Modules and class EventEmitter....
