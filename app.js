@@ -47,36 +47,61 @@
 // Part #03
 //  ReadLine Modules (Get Users Input)......
 
-const readline = require('readline');
-const rl = readline.createInterface({  input  : process.stdin,
-                            output : process.stdout });
+// const readline = require('readline');
+// const rl = readline.createInterface({  input  : process.stdin,
+//                             output : process.stdout });
 
 
-let num1 = Math.floor((Math.random()*10)+1);
-let num2 = Math.floor((Math.random()*10)+1);
-let answer = num1 + num2;
+// let num1 = Math.floor((Math.random()*10)+1);
+// let num2 = Math.floor((Math.random()*10)+1);
+// let answer = num1 + num2;
 
-rl.question(` The Sum of ${ num1 } and ${ num2 } ? \n` , 
-(userInput)=>{
-    // console.log(userInput);
-    if (userInput.trim() == answer){
-        rl.close();
-    }
-    else{
-        rl.setPrompt('Your Answer is Wrong...Try Again...!!! \n');
-        rl.prompt();
-        rl.on('line', (userInput)=>{
-            if (userInput.trim() == answer){
-                rl.close();
-            }
-            else{
-                rl.setPrompt(`Your Answer ${ userInput } is Wrong...Try Again...!!! \n`);
-                rl.prompt();
-            }
-        });
-    }
-});
+// rl.question(` The Sum of ${ num1 } and ${ num2 } ? \n` , 
+// (userInput)=>{
+//     // console.log(userInput);
+//     if (userInput.trim() == answer){
+//         rl.close();
+//     }
+//     else{
+//         rl.setPrompt('Your Answer is Wrong...Try Again...!!! \n');
+//         rl.prompt();
+//         rl.on('line', (userInput)=>{
+//             if (userInput.trim() == answer){
+//                 rl.close();
+//             }
+//             else{
+//                 rl.setPrompt(`Your Answer ${ userInput } is Wrong...Try Again...!!! \n`);
+//                 rl.prompt();
+//             }
+//         });
+//     }
+// });
 
-rl.on('close', ()=>{
-    console.log('Congrates Bud....you got CORRECT answer...!!!');
-});
+// rl.on('close', ()=>{
+//     console.log('Congrates Bud....you got CORRECT answer...!!!');
+// });
+
+
+//-----------------------------------------------------//
+// Part #04
+//  File System Modules (CRUD folders and files....Get information from files etc)......
+
+const fs = require('fs');
+// fs.writeFile('example.txt',"This is my first file in NODE ...!!!", (err)=>{
+//     if(err){
+//         console.log(err);
+//     }
+//     else{
+//         console.log('File Successfully created...!!!');
+//         fs.readFile('example.txt','utf8',(err,file)=>{
+//             if(err){
+//                 console.log(err);
+//             }
+//             else{
+//                 console.log(file);
+//             }
+//         });
+//     }       
+// });
+
+
