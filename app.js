@@ -114,11 +114,20 @@ const fs = require('fs');
 //     }
 // });
 
-fs.appendFile('example.txt', '\nData is appended data into file ...!!!', (err) => {
-    if (err) {
-        console.log(err);
-    }
-    else {
-        console.log("Data Appended successfuly...!!!");
-    }
-});
+// fs.appendFile('example.txt', '\nData is appended data into file ...!!!', (err) => {
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log("Data Appended successfuly...!!!");
+//     }
+// });
+
+fs.unlink('example.txt', (err) => {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            console.log(" File Deleted successfuly...!!!");
+        }
+    });

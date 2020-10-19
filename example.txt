@@ -1,5 +1,0 @@
-This is my first file in NODE ...!!!
-Data is appended data into file ...!!!
-Data is appended data into file ...!!!
-Data is appended data into file ...!!!
-Data is appended data into file ...!!!
