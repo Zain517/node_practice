@@ -105,11 +105,20 @@ const fs = require('fs');
 // });
 
 
-fs.rename('example.txt', 'new_example.txt', (err) => {
+// fs.rename('example.txt', 'new_example.txt', (err) => {
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log("renamed successfuly...!!!");
+//     }
+// });
+
+fs.appendFile('example.txt', '\nData is appended data into file ...!!!', (err) => {
     if (err) {
         console.log(err);
     }
     else {
-        console.log("renamed successfuly...!!!");
+        console.log("Data Appended successfuly...!!!");
     }
 });
