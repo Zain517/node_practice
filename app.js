@@ -191,4 +191,28 @@ const fs = require('fs');
 
 /////// if we have more than one file in directory
 
-
+fs.readdir('test_folder', (err, files) => {
+    if (err)
+        console.log(err);
+    else {
+        // console.log(files);
+        for (let file of files) {
+            fs.unlink('./test_folder/' + file, (err) => {
+                if (err) {
+                    console.log(err);
+                }
+                else {
+                    console.log(`deleted ${file} from folder...!!!`);
+                }
+            });
+        }
+        fs.rmdir('./test_folder', (err) => {
+            if (err) {
+                console.log(err);
+            }
+            else {
+                console.log(" Also deleted Folder  successfuly...!!!");
+            }
+        });
+    }
+});
