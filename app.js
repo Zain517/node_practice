@@ -86,7 +86,7 @@
 // Part #04
 //  File System Modules (CRUD folders and files....Get information from files etc)......
 
-const fs = require('fs');
+// const fs = require('fs');
 // fs.writeFile('example.txt',"This is my first file in NODE ...!!!", (err)=>{
 //     if(err){
 //         console.log(err);
@@ -132,3 +132,18 @@ const fs = require('fs');
 //         }
 //     });
 
+
+//-----------------------------------------------------//
+// Part #05
+//  File System Modules (Dealing with Folders)==>(CRUD folders and files....Get information from files etc)......
+
+
+const fs = require('fs');
+fs.mkdir('extra folder', (err) => {
+    if (err) {
+        console.log(err);
+    }
+    else {
+        console.log(" Folder created successfuly...!!!");
+    }
+});
