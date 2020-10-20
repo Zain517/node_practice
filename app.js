@@ -173,18 +173,22 @@ const fs = require('fs');
 //     }
 // });
 
-fs.unlink('./extra folder/example.txt', (err) => {
-    if (err) {
-        console.log(err);
-    }
-    else {
-        fs.rmdir('./extra folder', (err) => {
-            if (err) {
-                console.log(err);
-            }
-            else {
-                console.log(" Folder deleted successfuly...!!!");
-            }
-        });
-    }
-});
+// fs.unlink('./extra folder/example.txt', (err) => {
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         fs.rmdir('./extra folder', (err) => {
+//             if (err) {
+//                 console.log(err);
+//             }
+//             else {
+//                 console.log(" Folder deleted successfuly...!!!");
+//             }
+//         });
+//     }
+// });
+
+/////// if we have more than one file in directory
+
+
