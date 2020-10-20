@@ -137,7 +137,7 @@
 // Part #05
 //  File System Modules (Dealing with Folders)==>(CRUD folders and files....Get information from files etc)......
 
-const fs = require('fs');
+// const fs = require('fs');
 
 // fs.mkdir('extra folder', (err) => {
 //     if (err) {
@@ -191,28 +191,29 @@ const fs = require('fs');
 
 /////// if we have more than one file in directory
 
-fs.readdir('test_folder', (err, files) => {
-    if (err)
-        console.log(err);
-    else {
-        // console.log(files);
-        for (let file of files) {
-            fs.unlink('./test_folder/' + file, (err) => {
-                if (err) {
-                    console.log(err);
-                }
-                else {
-                    console.log(`deleted ${file} from folder...!!!`);
-                }
-            });
-        }
-        fs.rmdir('./test_folder', (err) => {
-            if (err) {
-                console.log(err);
-            }
-            else {
-                console.log(" Also deleted Folder  successfuly...!!!");
-            }
-        });
-    }
-});
+// fs.readdir('test_folder', (err, files) => {
+//     if (err)
+//         console.log(err);
+//     else {
+//         // console.log(files);
+//         for (let file of files) {
+//             fs.unlink('./test_folder/' + file, (err) => {
+//                 if (err) {
+//                     console.log(err);
+//                 }
+//                 else {
+//                     console.log(`deleted ${file} from folder...!!!`);
+//                 }
+//             });
+//         }
+//         fs.rmdir('./test_folder', (err) => {
+//             if (err) {
+//                 console.log(err);
+//             }
+//             else {
+//                 console.log(" Also deleted Folder  successfuly...!!!");
+//             }
+//         });
+//     }
+// });
+
