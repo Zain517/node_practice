@@ -157,3 +157,20 @@ const fs = require('fs');
 //             console.log(" Folder deleted successfuly...!!!");
 //         }
 //     });
+
+fs.mkdir('extra folder', (err) => {
+    if (err) {
+        console.log(err);
+    }
+    else {
+        fs.writeFile('./extra folder/example.txt', 'yeah enter into folder and write into the file', (err) => {
+            if (err) {
+                console.log(err);
+            }
+            else {
+                console.log(" File created successfuly ...!!!");
+            }
+        });
+    }
+});
+
