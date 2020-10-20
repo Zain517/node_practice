@@ -139,11 +139,21 @@
 
 
 const fs = require('fs');
-fs.mkdir('extra folder', (err) => {
-    if (err) {
-        console.log(err);
-    }
-    else {
-        console.log(" Folder created successfuly...!!!");
-    }
-});
+
+// fs.mkdir('extra folder', (err) => {
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         console.log(" Folder created successfuly...!!!");
+//     }
+// });
+
+// fs.rmdir('extra folder', (err) => {
+//         if (err) {
+//             console.log(err);
+//         }
+//         else {
+//             console.log(" Folder deleted successfuly...!!!");
+//         }
+//     });
