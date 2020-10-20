@@ -221,11 +221,16 @@
 // Part #06
 // Readable and Writeable Streams....
 
-const fs = require('fs');
-const readStream = fs.createReadStream('./large-data-file.txt'/*,'utf8'*/);
-const writeStream = fs.createWriteStream('./new_file.txt');
+// const fs = require('fs');
+// const readStream = fs.createReadStream('./large-data-file.txt'/*,'utf8'*/);
+// const writeStream = fs.createWriteStream('./new_file.txt');
 
-readStream.on('data',(chunk)=>{
-    // console.log(chunk); //jitny bufffer hongy utny hi chunk me read kiya
-    writeStream.write(chunk);
-});
+// readStream.on('data',(chunk)=>{
+//     // console.log(chunk); //jitny bufffer hongy utny hi chunk me read kiya
+//     writeStream.write(chunk);
+// });
+
+//-----------------------------------------------------//
+// Part #07
+// Why we need to use Streams....
+
