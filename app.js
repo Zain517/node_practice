@@ -137,7 +137,6 @@
 // Part #05
 //  File System Modules (Dealing with Folders)==>(CRUD folders and files....Get information from files etc)......
 
-
 const fs = require('fs');
 
 // fs.mkdir('extra folder', (err) => {
@@ -158,19 +157,34 @@ const fs = require('fs');
 //         }
 //     });
 
-fs.mkdir('extra folder', (err) => {
+// fs.mkdir('extra folder', (err) => {
+//     if (err) {
+//         console.log(err);
+//     }
+//     else {
+//         fs.writeFile('./extra folder/example.txt', 'yeah enter into folder and write into the file', (err) => {
+//             if (err) {
+//                 console.log(err);
+//             }
+//             else {
+//                 console.log(" File created successfuly ...!!!");
+//             }
+//         });
+//     }
+// });
+
+fs.unlink('./extra folder/example.txt', (err) => {
     if (err) {
         console.log(err);
     }
     else {
-        fs.writeFile('./extra folder/example.txt', 'yeah enter into folder and write into the file', (err) => {
+        fs.rmdir('./extra folder', (err) => {
             if (err) {
                 console.log(err);
             }
             else {
-                console.log(" File created successfuly ...!!!");
+                console.log(" Folder deleted successfuly...!!!");
             }
         });
     }
 });
-
