@@ -244,15 +244,24 @@
 // 1. Pipe
 /// take readable stream and send it to writeable stream......Source_Stream.pipe(Destination_Stream)
 
+// const fs = require('fs');
+// const readStream = fs.createReadStream('./large-data-file.txt'/*,'utf8'*/);
+// const writeStream = fs.createWriteStream('./new_file.txt');
+
+// // readStream.on('data',(chunk)=>{
+// //     writeStream.write(chunk);
+// // });
+// /// altenate or short hand version of above method is using pipe
+// readStream.pipe(writeStream);
+
+// 2. Pipe Chaning
+// Compresss the File
 const fs = require('fs');
-const readStream = fs.createReadStream('./large-data-file.txt'/*,'utf8'*/);
-const writeStream = fs.createWriteStream('./new_file.txt');
+const zlib = require('zlib'); /// zlib is for file compresion
+const gzip = zlib.createGzip(); /// Transform stream --> read the data and manuplate it in our case it is compresion
 
-// readStream.on('data',(chunk)=>{
-//     writeStream.write(chunk);
-// });
-/// altenate or short hand version of above method is using pipe
-readStream.pipe(writeStream);
-
+const readStream = fs.createReadStream('./large-data-file.txt','utf8');
+const writeStream = fs.createWriteStream('./new_file.txt.gz'); // .gz is extension of gzip file...compressed file
+readStream.pipe(gzip).pipe(writeStream);
 
 
