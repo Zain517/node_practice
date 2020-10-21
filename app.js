@@ -237,3 +237,22 @@
 /// in normal method fs.readFile then we'll move towards streams...like fs.createReadStream and so on...as part#06
 
 
+//-----------------------------------------------------//
+// Part #08
+// Pipe and Pipe Chaining 
+
+// 1. Pipe
+/// take readable stream and send it to writeable stream......Source_Stream.pipe(Destination_Stream)
+
+const fs = require('fs');
+const readStream = fs.createReadStream('./large-data-file.txt'/*,'utf8'*/);
+const writeStream = fs.createWriteStream('./new_file.txt');
+
+// readStream.on('data',(chunk)=>{
+//     writeStream.write(chunk);
+// });
+/// altenate or short hand version of above method is using pipe
+readStream.pipe(writeStream);
+
+
+
