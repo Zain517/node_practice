@@ -233,4 +233,7 @@
 //-----------------------------------------------------//
 // Part #07
 // Why we need to use Streams....
+/// if size of file is very very large like GBs etc like exception came : file size is greater than buffer size 
+/// in normal method fs.readFile then we'll move towards streams...like fs.createReadStream and so on...as part#06
+
 
