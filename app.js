@@ -255,13 +255,20 @@
 // readStream.pipe(writeStream);
 
 // 2. Pipe Chaning
-// Compresss the File
-const fs = require('fs');
-const zlib = require('zlib'); /// zlib is for file compresion
-const gzip = zlib.createGzip(); /// Transform stream --> read the data and manuplate it in our case it is compresion
+// ----> Compresss the File
+// const fs = require('fs');
+// const zlib = require('zlib'); /// zlib is for file compresion
+// const gzip = zlib.createGzip(); /// Transform stream --> read the data and manuplate it in our case it is compresion
 
-const readStream = fs.createReadStream('./large-data-file.txt','utf8');
-const writeStream = fs.createWriteStream('./new_file.txt.gz'); // .gz is extension of gzip file...compressed file
-readStream.pipe(gzip).pipe(writeStream);
+// const readStream = fs.createReadStream('./large-data-file.txt','utf8');
+// const writeStream = fs.createWriteStream('./new_file.txt.gz'); // .gz is extension of gzip file...compressed file
+// readStream.pipe(gzip).pipe(writeStream);
 
+// ----> unCompresss the File and wite in it
+// const fs = require('fs');
+// const zlib = require('zlib'); /// zlib is for file compresion
+// const gunzip = zlib.createGunzip(); /// Transform stream --> read the data and manuplate it in our case it is Un-compresion
 
+// const readStream = fs.createReadStream('./new_file.txt.gz'); // .gz is extension of gzip file...compressed file
+// const writeStream = fs.createWriteStream('./un_compressed.txt');
+// readStream.pipe(gunzip).pipe(writeStream);
