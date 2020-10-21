@@ -1,6 +1,8 @@
 # node_practice
 
-> Initial Concepts...!!!
+<br>
+> ##Initial Concepts...!!!
+<br>
 
 #### 1. require, module.exports
 #### 2. Event Modules and class EventEmitter
@@ -11,10 +13,11 @@
 #### 7. compare #4 & #6...Stream win coz of memory efficient....#4 got excetion
 #### 8. Pipe and Pipe Chaining(compresion and de-compresion) 
 
+<br>
 ---
+<br>
 
-
-> HTTP server & module...!!! 
+> ##HTTP server & module...!!! 
 
 #### 1. Create HTTP server using HTTP module
 #### 2. erving Static files with HTTP and File System Module
