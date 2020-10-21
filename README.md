@@ -1,4 +1,7 @@
 # node_practice
+
+> Initial Concepts...!!!
+
 #### 1. require, module.exports
 #### 2. Event Modules and class EventEmitter
 #### 3. ReadLine Modules (Get Users Input)
@@ -8,5 +11,11 @@
 #### 7. compare #4 & #6...Stream win coz of memory efficient....#4 got excetion
 #### 8. Pipe and Pipe Chaining(compresion and de-compresion) 
 
+---
 
 
+> HTTP server & module...!!! 
+
+#### 1. Create HTTP server using HTTP module
+#### 2. erving Static files with HTTP and File System Module
+#### 3. Create Package.Json using npm init
