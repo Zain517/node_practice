@@ -4,8 +4,6 @@
 
 > ## Initial Concepts...!!!
 
-<br>
-
 #### 1. require, module.exports
 #### 2. Event Modules and class EventEmitter
 #### 3. ReadLine Modules (Get Users Input)
