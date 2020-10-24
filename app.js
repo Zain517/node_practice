@@ -58,4 +58,9 @@
 // 5. come to cmd and type and BOOOOM loadash install
 // 6. now use......
 
+// const _ = require('lodash');
+// let example = _.fill([1,2,3,4,5],'banana',1,4);
+// console.log(example);
 
+// 7. To uninstall a pkg or may be you install wrong pkg simple type npm uninstall {pkg-name}
+//    it will also remove all the dependencies.... 
