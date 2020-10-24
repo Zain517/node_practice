@@ -64,3 +64,9 @@
 
 // 7. To uninstall a pkg or may be you install wrong pkg simple type npm uninstall {pkg-name}
 //    it will also remove all the dependencies.... 
+
+
+//------------------------------------------------------------------//
+// part#05...
+// Sementic versioning.....
+
