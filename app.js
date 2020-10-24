@@ -68,5 +68,7 @@
 
 //------------------------------------------------------------------//
 // part#05...
-// Sementic versioning.....
+// Sementic versioning.....(A standard that alot of NodeJS pkg follows...)
+// like verioning what kind of changes occur in updated pg
+
 
