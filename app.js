@@ -71,4 +71,15 @@
 // Sementic versioning.....(A standard that alot of NodeJS pkg follows...)
 // like verioning what kind of changes occur in updated pg
 
+// "lodash": "^4.17.20" //major_Version.minor_Version.Patch_Version
+// supppose we load of pkg and here is above....
+//verion (^4.17.20)
+// .20 is patch-version if patch update it means kinda bug fixes etc
+// .17 is minor-version if this updates it means add new functionality and might depricate some old functionality
+//   but you can still use it //==> its non-breakingChange Update
+// 4 is major-version if this updates it means there is a breakingChange update and 
+//  latest major-version is not compatible with old major-version...like 5.0.0 is not compatile with any version of 4.0.0
+// ^ sign named as Carrot-charater its means....4.x.x ==> I don't wanna any major update but allow for minor and patch updates.
+// ~ sign named as Tilda-Symbol (like ~4.17.20) its means....4.17.x ==> I don't wanna any major and minor update but allow for patch updates.
+// if there is No symbol (like 4.17.20) it means you don't wana any update....remain pkg as it is.
 
