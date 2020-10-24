@@ -25,4 +25,5 @@
 
 #### 1. Create HTTP server using HTTP module
 #### 2. erving Static files with HTTP and File System Module
-#### 3. Create Package.Json using npm init
+#### 3. Create Package.Json using npm init ... holding the matadata of project file
+#### 4. Use/install External packages using nom and include them in own project....
