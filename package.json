@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-tutoarials",
+  "version": "1.0.0",
+  "description": "This is all about initail concepts of nodeJS tutorials",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zain517/node_practice.git"
+  },
+  "author": "Zain Ul Abideen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zain517/node_practice/issues"
+  },
+  "homepage": "https://github.com/Zain517/node_practice#readme"
+}

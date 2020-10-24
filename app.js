@@ -39,4 +39,14 @@
 
 //------------------------------------------------------------------//
 // part#03...
-// Create Package.Json using npm init
+// Create Package.Json using npm init ... holding the matadata of project file
+
+// 1. go to cmd
+// 2. npm init (node package manager)
+// 3. fill all the req likes....name, entry point, repository, auther, git, etc etc
+// 4. and when end this will crearte a Json file (Package.Json) in same repositiory
+
+
+//------------------------------------------------------------------//
+// part#04...
+// Use/install External packages using nom and include them in own project....
